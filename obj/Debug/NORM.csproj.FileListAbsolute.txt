@@ -1,0 +1,5 @@
+C:\Projects\GitHub\NORM\obj\Debug\NORM.csprojResolveAssemblyReference.cache
+C:\Projects\GitHub\NORM\bin\Debug\NORM.dll
+C:\Projects\GitHub\NORM\bin\Debug\NORM.pdb
+C:\Projects\GitHub\NORM\obj\Debug\NORM.dll
+C:\Projects\GitHub\NORM\obj\Debug\NORM.pdb

@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{73263D33-F6AF-4A26-941F-A19B6F80F47F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NORM</RootNamespace>
+    <AssemblyName>NORM</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AndConditionGroup.cs" />
+    <Compile Include="Between.cs" />
+    <Compile Include="Binder.cs" />
+    <Compile Include="QueryEnum.cs" />
+    <Compile Include="ReadonlyAttribute.cs" />
+    <Compile Include="DataHelper.cs" />
+    <Compile Include="Engine.cs" />
+    <Compile Include="EntityColumnAttribute.cs" />
+    <Compile Include="EntityObjectAttribute.cs" />
+    <Compile Include="Equal.cs" />
+    <Compile Include="GreaterThan.cs" />
+    <Compile Include="GreaterThanOrEqual.cs" />
+    <Compile Include="GroupBy.cs" />
+    <Compile Include="IdentityAttribute.cs" />
+    <Compile Include="OrderBy.cs" />
+    <Compile Include="OrderDirection.cs" />
+    <Compile Include="IConditionGroup.cs" />
+    <Compile Include="In.cs" />
+    <Compile Include="LessThan.cs" />
+    <Compile Include="LessThanOrEqual.cs" />
+    <Compile Include="Like.cs" />
+    <Compile Include="NotAnEntityObjectException.cs" />
+    <Compile Include="NotEqual.cs" />
+    <Compile Include="NotIn.cs" />
+    <Compile Include="NotLike.cs" />
+    <Compile Include="OrConditionGroup.cs" />
+    <Compile Include="PrimaryKeyAttribute.cs" />
+    <Compile Include="SoftDeleteAttribute.cs" />
+    <Compile Include="SoftDeleteColumnAttribute.cs" />
+    <Compile Include="TypeHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="IWhereCondition.cs" />
+    <Compile Include="UnassignableAttribute.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="README.md" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
